@@ -39,6 +39,22 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* Philippine flag colors */
+  --ph-blue: #0038A8;
+  --ph-red: #CE1126;
+  --ph-yellow: #FCD116;
+  --ph-white: #FFFFFF;
+
+  /* Semantic colors using Philippine palette */
+  --brand-primary: var(--ph-blue);
+  --brand-secondary: var(--ph-red);
+  --brand-accent: var(--ph-yellow);
+  --text-primary: #544C4C;
+  --text-secondary: #78858F;
+  --bg-gray: #DBD8D8;
+  --bg-light: #F8F9FA;
+  --bg-subtle: #E8E8E8;
 }
 
 .dark {

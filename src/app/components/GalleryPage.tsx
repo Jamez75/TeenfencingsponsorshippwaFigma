@@ -2,6 +2,7 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 import { useState } from 'react';
 import { X } from 'lucide-react';
 import { ProfileBanner } from './ProfileBanner';
+import { PageNav } from './PageNav';
 
 export function GalleryPage() {
   const [selectedImage, setSelectedImage] = useState<{ eventIdx: number; imageIdx: number } | null>(null);
@@ -44,15 +45,16 @@ export function GalleryPage() {
       <ProfileBanner />
       <div className="pt-20 pb-8 px-4">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl mb-2 text-center" style={{ color: '#0038A8' }}>Gallery</h1>
-          <div className="h-1 w-16 rounded mx-auto mb-2" style={{ backgroundColor: '#CE1126' }} />
+          <PageNav />
+          <h1 className="text-4xl mb-2 text-center text-[var(--brand-primary)]">Gallery</h1>
+          <div className="h-1 w-16 rounded mx-auto mb-2 bg-[var(--brand-secondary)]" />
           <p className="text-center text-gray-600 mb-8">Journey through competitions and training</p>
 
           <div className="space-y-12">
             {events.map((event, eventIdx) => (
               <div key={eventIdx}>
                 <div className="mb-4">
-                  <h2 className="text-2xl mb-1" style={{ color: '#CE1126' }}>{event.name}</h2>
+                  <h2 className="text-2xl mb-1 text-[var(--brand-secondary)]">{event.name}</h2>
                   <p className="text-gray-600">
                     {event.date} • {event.location}
                   </p>

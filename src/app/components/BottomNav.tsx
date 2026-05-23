@@ -66,7 +66,7 @@ export function BottomNav() {
                 >
                   <Icon
                     size={24}
-                    style={{ color: '#0038A8' }}
+                    className="text-[var(--brand-primary)]"
                     className="mb-1"
                   />
                   <span className="text-xs" style={{ color: '#0038A8' }}>
@@ -84,12 +84,12 @@ export function BottomNav() {
               >
                 <Icon
                   size={24}
-                  style={{ color: isActive ? '#CE1126' : '#0038A8' }}
+                  className={isActive ? 'text-[var(--brand-secondary)]' : 'text-[var(--brand-primary)]'}
                   className="mb-1"
                 />
                 <span
                   className="text-xs"
-                  style={{ color: isActive ? '#CE1126' : '#0038A8' }}
+                  className={isActive ? 'text-[var(--brand-secondary)]' : 'text-[var(--brand-primary)]'}
                 >
                   {item.label}
                 </span>
@@ -109,7 +109,7 @@ export function BottomNav() {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between p-4 border-b">
-              <h3 className="text-lg" style={{ color: '#0038A8' }}>Share</h3>
+              <h3 className="text-lg text-[var(--brand-primary)]">Share</h3>
               <button
                 onClick={() => setShowShareModal(false)}
                 className="p-2 hover:bg-gray-100 rounded-full"
@@ -143,8 +143,8 @@ export function BottomNav() {
                   onClick={copyLink}
                   className="w-full flex items-center gap-4 p-4 rounded-lg hover:bg-gray-50 transition-colors"
                 >
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FCD116' }}>
-                    <LinkIcon size={20} style={{ color: '#0038A8' }} />
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center bg-[var(--brand-accent)]">
+                    <LinkIcon size={20} className="text-[var(--brand-primary)]" />
                   </div>
                   <span className="text-lg">Copy Link</span>
                 </button>
@@ -152,7 +152,7 @@ export function BottomNav() {
                   onClick={() => setShowQRCode(true)}
                   className="w-full flex items-center gap-4 p-4 rounded-lg hover:bg-gray-50 transition-colors"
                 >
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#0038A8' }}>
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center bg-[var(--brand-primary)]">
                     <QrCode size={20} className="text-white" />
                   </div>
                   <span className="text-lg">Show QR Code</span>
@@ -166,14 +166,13 @@ export function BottomNav() {
                     size={200}
                     level="H"
                     includeMargin={true}
-                    fgColor="#0038A8"
+                    style={{ color: 'var(--brand-primary)' }}
                   />
                 </div>
                 <p className="text-center text-gray-600 mt-4 mb-2">Scan to visit</p>
                 <button
                   onClick={() => setShowQRCode(false)}
-                  className="mt-2 px-6 py-2 rounded-lg text-white"
-                  style={{ backgroundColor: '#CE1126' }}
+                  className="mt-2 px-6 py-2 rounded-lg text-white bg-[var(--brand-secondary)]"
                 >
                   Back
                 </button>

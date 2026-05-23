@@ -16,8 +16,8 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#0038A8] to-[#CE1126]"></div>
-            <span className="text-xl" style={{ color: '#0038A8' }}>Fencing Dreams</span>
+            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[var(--brand-primary)] to-[var(--brand-secondary)]"></div>
+            <span className="text-xl text-[var(--brand-primary)]">Fencing Dreams</span>
           </Link>
 
           <div className="flex space-x-8">
