@@ -15,14 +15,14 @@ export default function App() {
   const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
-    const hasSeenSplash = sessionStorage.getItem('hasSeenSplash');
-    if (hasSeenSplash) {
-      setShowSplash(false);
-    }
+    // const hasSeenSplash = sessionStorage.getItem('hasSeenSplash');
+    // if (hasSeenSplash) {
+    //   setShowSplash(false);
+    // }
   }, []);
 
   const handleSplashComplete = () => {
-    sessionStorage.setItem('hasSeenSplash', 'true');
+    // sessionStorage.setItem('hasSeenSplash', 'true');
     setShowSplash(false);
   };
 

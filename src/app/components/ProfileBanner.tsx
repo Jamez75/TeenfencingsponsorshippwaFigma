@@ -36,7 +36,7 @@ export function ProfileBanner() {
         </div>
         <div className="flex items-center gap-2">
           <GraduationCap className="w-4 h-4 text-[var(--brand-primary)]" />
-          <p className="text-center text-[var(--brand-primary)] text-[24px] text-[16px] font-bold">Honor Roll student - UE Manila</p>
+          <p className="text-center text-[var(--brand-primary)] font-bold text-[16px]">Honor Roll student - UE Manila</p>
         </div>
       </div>
     </div>
