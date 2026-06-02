@@ -36,7 +36,7 @@ export default function App() {
       <div className="min-h-screen bg-white pb-20">
         <Navigation />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<AboutPage />} />
           <Route path="/donate" element={<DonatePage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/achievements" element={<AchievementsPage />} />

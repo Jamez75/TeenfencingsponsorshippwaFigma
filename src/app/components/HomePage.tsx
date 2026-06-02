@@ -8,7 +8,7 @@ export function HomePage() {
   const stats = [
     { value: '15', label: 'Competitions' },
     { value: '8', label: 'Medals' },
-    { value: '5', label: 'Years Exp.' },
+    { value: '8', label: 'Years Exp.' },
   ];
 
   const recentPhotos = [
@@ -32,7 +32,7 @@ export function HomePage() {
 
       <div className="px-6 pt-20">
         <h1 className="text-center text-4xl mb-1 text-[var(--brand-primary)]">Christine May Morales</h1>
-        <p className="text-center text-sm mb-1 text-[var(--text-primary)]">Competitive Fencer</p>
+        <p className="text-center text-sm mb-1 text-[var(--text-primary)]">Fencing prodigy</p>
         <p className="text-center text-sm mb-1 text-[var(--text-primary)]">Straight "A" Student - UE Manila</p>
 
         <div className="flex items-center justify-center gap-2 mt-2">

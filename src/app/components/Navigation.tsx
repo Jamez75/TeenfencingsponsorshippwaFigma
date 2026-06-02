@@ -7,7 +7,7 @@ export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { path: '/', label: 'Home' },
+    { path: '/about', label: 'About' },
     { path: '/donate', label: 'Donate' },
   ];
 
@@ -15,7 +15,7 @@ export function Navigation() {
     <nav className="sticky top-0 z-40 bg-white/95 backdrop-blur shadow-sm md:block hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/about" className="flex items-center space-x-2">
             <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[var(--brand-primary)] to-[var(--brand-secondary)]"></div>
             <span className="text-xl text-[var(--brand-primary)]">Fencing Dreams</span>
           </Link>

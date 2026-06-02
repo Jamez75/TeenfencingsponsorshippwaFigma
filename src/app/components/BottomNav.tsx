@@ -43,7 +43,7 @@ export function BottomNav() {
   };
 
   const navItems = [
-    { path: '/', label: 'Home', icon: Home, onClick: null },
+    { path: '/about', label: 'Home', icon: Home, onClick: null },
     { path: '/donate', label: 'Donate', icon: Heart, onClick: null },
     { path: '/gallery', label: 'Gallery', icon: Image, onClick: null },
     { path: '#share', label: 'Share', icon: Share2, onClick: handleShare },

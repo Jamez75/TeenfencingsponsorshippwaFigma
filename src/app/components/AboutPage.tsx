@@ -1,5 +1,5 @@
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import { Trophy, Award, Target, GraduationCap, Swords } from 'lucide-react';
+import { Trophy, Award, Target, GraduationCap, Swords, Download } from 'lucide-react';
 import { ProfileBanner } from './ProfileBanner';
 import { PageNav } from './PageNav';
 
@@ -130,6 +130,15 @@ export function AboutPage() {
               </div>
             ))}
           </div>
+          <button
+            onClick={() => {
+              alert('PDF download will be available soon!');
+            }}
+            className="mt-4 flex items-center gap-2 px-4 py-2 rounded-lg text-[var(--brand-primary)] border-2 border-[var(--brand-primary)] hover:bg-[var(--brand-primary)] hover:text-white transition-all active:scale-95"
+          >
+            <Download size={18} />
+            <span>Download Achievements PDF</span>
+          </button>
         </div>
 
         <div className="bg-white rounded-xl shadow-md p-6 border-2 border-[var(--bg-subtle)]">
