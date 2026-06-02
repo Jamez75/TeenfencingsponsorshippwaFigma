@@ -43,7 +43,7 @@ export function GalleryPage() {
   return (
     <div className="min-h-screen bg-white">
       <ProfileBanner />
-      <div className="pt-20 pb-8 px-4">
+      <div className="pt-[65px] pb-8 px-4">
         <div className="max-w-6xl mx-auto">
           <PageNav />
           <h1 className="text-4xl mb-2 text-center text-[var(--brand-primary)]">Gallery</h1>

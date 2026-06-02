@@ -30,7 +30,7 @@ export function HomePage() {
     <div className="min-h-screen bg-white">
       <ProfileBanner />
 
-      <div className="px-6 pt-20">
+      <div className="px-6 pt-[65px]">
         <h1 className="text-center text-4xl mb-1 text-[var(--brand-primary)]">Christine May Morales</h1>
         <p className="text-center text-sm mb-1 text-[var(--text-primary)]">Fencing prodigy</p>
         <p className="text-center text-sm mb-1 text-[var(--text-primary)]">Straight "A" Student - UE Manila</p>

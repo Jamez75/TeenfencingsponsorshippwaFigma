@@ -27,7 +27,7 @@ export function DonatePage() {
   return (
     <div className="min-h-screen bg-white">
       <ProfileBanner />
-      <div className="pt-20 pb-8 px-4">
+      <div className="pt-[65px] pb-8 px-4">
         <div className="max-w-2xl mx-auto">
         <PageNav />
         <div className="text-center mb-12">

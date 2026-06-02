@@ -87,7 +87,7 @@ export function AchievementsPage() {
   return (
     <div className="min-h-screen bg-white">
       <ProfileBanner />
-      <div className="px-6 pt-20 pb-6">
+      <div className="px-6 pt-[65px] pb-6">
         <PageNav />
 
         <div className="mb-8">
