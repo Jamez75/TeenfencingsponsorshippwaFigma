@@ -134,7 +134,8 @@ export function AboutPage() {
             onClick={() => {
               alert('PDF download will be available soon!');
             }}
-            className="mt-4 flex items-center gap-2 px-4 py-2 rounded-lg text-[var(--brand-primary)] border-2 border-[var(--brand-primary)] hover:bg-[var(--brand-primary)] hover:text-white transition-all active:scale-95"
+            className="mt-4 flex items-center gap-2 px-4 py-2 rounded-lg text-white transition-all active:scale-95"
+            style={{ background: 'var(--brand-gradient)' }}
           >
             <Download size={18} />
             <span>Download Achievements PDF</span>
@@ -167,7 +168,8 @@ export function AboutPage() {
           </ul>
           <a
             href="/donate"
-            className="block w-full py-3 rounded-lg text-center text-white transition-all active:scale-95 bg-[var(--brand-secondary)]"
+            className="block w-full py-3 rounded-lg text-center text-white transition-all active:scale-95"
+            style={{ background: 'var(--brand-gradient)' }}
           >
             Support My Journey
           </a>

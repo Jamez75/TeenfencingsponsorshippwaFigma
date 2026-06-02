@@ -148,7 +148,7 @@ export function AchievementsPage() {
           <a
             href="/donate"
             className="block w-full py-3 rounded-lg text-center text-white transition-all active:scale-95"
-            style={{ backgroundColor: 'var(--brand-secondary)' }}
+            style={{ background: 'var(--brand-gradient)' }}
           >
             Support My Journey
           </a>

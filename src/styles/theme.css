@@ -50,6 +50,7 @@
   --brand-primary: var(--ph-blue);
   --brand-secondary: var(--ph-red);
   --brand-accent: var(--ph-yellow);
+  --brand-gradient: linear-gradient(135deg, var(--ph-blue) 0%, var(--ph-red) 100%);
   --text-primary: #544C4C;
   --text-secondary: #78858F;
   --bg-gray: #DBD8D8;

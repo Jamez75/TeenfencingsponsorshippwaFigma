@@ -58,14 +58,13 @@ export function DonatePage() {
                   setSelectedAmount(amount);
                   setCustomAmount('');
                 }}
-                className={`p-4 rounded-lg border-2 transition-all ${
-                  selectedAmount === amount
-                    ? 'border-[var(--brand-primary)] bg-[var(--brand-primary)] text-white'
-                    : 'border-[var(--bg-subtle)] hover:border-[var(--brand-primary)]'
-                }`}
+                className="p-4 rounded-lg border-2 border-transparent transition-all text-white"
+                style={{
+                  background: selectedAmount === amount ? 'var(--brand-secondary)' : 'var(--brand-gradient)',
+                }}
               >
                 <div>₱{amount.toLocaleString()}</div>
-                <div className={`text-sm mt-1 ${selectedAmount === amount ? 'text-white/80' : 'text-[var(--text-secondary)]'}`}>
+                <div className="text-sm mt-1 text-white/80">
                   ${convertToUSD(amount)} USD
                 </div>
               </button>
@@ -200,7 +199,8 @@ export function DonatePage() {
           <button
             onClick={handleDonate}
             disabled={!(selectedAmount || customAmount) || !paymentMethod}
-            className="w-full py-4 rounded-lg text-white transition-all disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105 bg-[var(--brand-secondary)]"
+            className="w-full py-4 rounded-lg text-white transition-all disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105"
+            style={{ background: 'var(--brand-gradient)' }}
           >
             Complete Donation
           </button>
