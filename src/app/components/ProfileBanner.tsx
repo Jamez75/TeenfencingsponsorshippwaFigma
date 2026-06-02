@@ -29,13 +29,14 @@ export function ProfileBanner() {
       </div>
       
       <div className="mt-24 flex flex-col items-center pb-2 px-4">
+        <h1 className="text-3xl text-center font-bold text-[var(--brand-primary)] mb-2">Christine May Morales</h1>
         <div className="flex items-center gap-2 mb-1">
           <Swords className="w-5 h-5 text-[var(--brand-primary)]" />
-          <p className="text-center text-[var(--brand-primary)] text-lg font-bold">Fencing Prodigy</p>
+          <p className="text-center text-[var(--brand-primary)] font-bold text-[16px]">Fencing Prodigy</p>
         </div>
         <div className="flex items-center gap-2">
           <GraduationCap className="w-4 h-4 text-[var(--brand-primary)]" />
-          <p className="text-center text-[var(--brand-primary)] text-sm font-medium">Honor Roll student - UE Manila</p>
+          <p className="text-center text-[var(--brand-primary)] text-[24px] text-[16px] font-bold">Honor Roll student - UE Manila</p>
         </div>
       </div>
     </div>

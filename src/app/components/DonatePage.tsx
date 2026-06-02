@@ -58,13 +58,17 @@ export function DonatePage() {
                   setSelectedAmount(amount);
                   setCustomAmount('');
                 }}
-                className="p-4 rounded-lg border-2 border-transparent transition-all text-white"
+                className={`p-4 rounded-lg border-2 transition-all ${
+                  selectedAmount === amount 
+                    ? 'border-transparent text-[var(--brand-primary)]' 
+                    : 'border-transparent text-white'
+                }`}
                 style={{
-                  background: selectedAmount === amount ? 'var(--brand-secondary)' : 'var(--brand-gradient)',
+                  background: selectedAmount === amount ? 'var(--brand-accent)' : 'var(--brand-gradient)',
                 }}
               >
                 <div>₱{amount.toLocaleString()}</div>
-                <div className="text-sm mt-1 text-white/80">
+                <div className={`text-sm mt-1 ${selectedAmount === amount ? 'text-[var(--brand-primary)]/80' : 'text-white/80'}`}>
                   ${convertToUSD(amount)} USD
                 </div>
               </button>
