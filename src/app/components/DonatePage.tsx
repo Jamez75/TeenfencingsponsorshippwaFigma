@@ -50,7 +50,7 @@ export function DonatePage() {
           <h2 className="text-2xl mb-2 text-[var(--brand-secondary)]">Select Donation Amount</h2>
           <div className="h-1 w-16 rounded mb-6 bg-[var(--brand-secondary)]" />
 
-          <div className="grid grid-cols-3 gap-4 mb-6">
+          <div className="grid grid-cols-2 gap-4 mb-6">
             {presetAmounts.map((amount) => (
               <button
                 key={amount}
