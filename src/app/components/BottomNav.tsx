@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router';
-import { Home, Heart, Image, Share2, Facebook, Link as LinkIcon, X as CloseIcon, QrCode } from 'lucide-react';
+import { Home, Heart, Image, Calendar, Share2, Facebook, Link as LinkIcon, X as CloseIcon, QrCode } from 'lucide-react';
 import { useState } from 'react';
 import { QRCodeSVG } from 'qrcode.react';
 
@@ -43,16 +43,17 @@ export function BottomNav() {
   };
 
   const navItems = [
-    { path: '/about', label: 'Home', icon: Home, onClick: null },
+    { path: '/about', label: 'About', icon: Home, onClick: null },
     { path: '/donate', label: 'Donate', icon: Heart, onClick: null },
     { path: '/gallery', label: 'Gallery', icon: Image, onClick: null },
+    { path: '/events', label: 'Events', icon: Calendar, onClick: null },
     { path: '#share', label: 'Share', icon: Share2, onClick: handleShare },
   ];
 
   return (
     <>
       <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-[var(--bg-subtle)] z-50 pb-safe">
-        <div className="grid grid-cols-4 max-w-lg mx-auto">
+        <div className="grid grid-cols-5 max-w-lg mx-auto">
           {navItems.map((item) => {
             const isActive = location.pathname === item.path;
             const Icon = item.icon;
