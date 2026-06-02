@@ -124,12 +124,7 @@ export function EventsPage() {
                   <div className="flex-1">
                     <div className="flex items-start justify-between gap-2 mb-1">
                       <h3 className="text-lg text-[var(--brand-primary)]">{event.title}</h3>
-                      <span
-                        className="text-xs px-2 py-1 rounded text-white flex-shrink-0"
-                        style={{ backgroundColor: getStatusColor(event.status) }}
-                      >
-                        {event.status}
-                      </span>
+
                     </div>
                     <div className="flex items-center gap-2 mb-1">
                       <Calendar size={14} className="text-[var(--text-secondary)]" />
