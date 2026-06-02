@@ -46,7 +46,6 @@ export function GalleryPage() {
         <div className="max-w-6xl mx-auto">
           <div className="h-1 w-16 rounded mx-auto mb-2 bg-[var(--brand-secondary)]" />
           <h1 className="text-4xl mb-2 text-center text-[var(--brand-primary)]">Gallery</h1>
-          <div className="h-1 w-16 rounded mx-auto mb-2 bg-[var(--brand-secondary)]" />
           <p className="text-center text-[var(--text-secondary)] mb-8">Journey through competitions and training</p>
 
           <div className="space-y-12">

@@ -33,7 +33,6 @@ export function HomePage() {
       <div className="px-6 pt-4">
         <div className="h-1 w-16 rounded mx-auto mb-4 bg-[var(--brand-secondary)]" />
         <h1 className="text-center text-4xl mb-1 text-[var(--brand-primary)]">Christine May Morales</h1>
-        <div className="h-1 w-16 rounded mx-auto mb-4 bg-[var(--brand-secondary)]" />
         <p className="text-center text-sm mb-1 text-[var(--text-primary)]">Fencing prodigy</p>
         <p className="text-center text-sm mb-1 text-[var(--text-primary)]">Straight "A" Student - UE Manila</p>
 

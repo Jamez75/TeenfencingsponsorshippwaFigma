@@ -33,7 +33,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <PWAHead />
-      <div className="min-h-screen bg-white pb-20">
+      <div className="min-h-screen bg-white pb-20 md:pb-0">
         <Navigation />
         <Routes>
           <Route path="/" element={<AboutPage />} />

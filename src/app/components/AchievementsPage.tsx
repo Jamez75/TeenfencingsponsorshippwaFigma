@@ -90,7 +90,6 @@ export function AchievementsPage() {
         <div className="mb-8">
           <div className="h-1 w-16 rounded mx-auto bg-[var(--brand-secondary)] mb-4" />
           <h1 className="text-center text-3xl mb-2 text-[var(--brand-primary)]">Achievements</h1>
-          <div className="h-1 w-16 rounded mx-auto bg-[var(--brand-secondary)]" />
         </div>
 
         <div className="flex justify-center gap-8 mb-8">

@@ -101,7 +101,7 @@ export function EventsPage() {
         <div className="mb-8">
           <div className="h-1 w-16 rounded mx-auto bg-[var(--brand-secondary)] mb-4" />
           <h1 className="text-center text-3xl mb-2 text-[var(--brand-primary)]">Events</h1>
-          <div className="h-1 w-16 rounded mx-auto bg-[var(--brand-secondary)]" />
+          <p className="text-center text-[var(--text-secondary)]">Upcoming and past competitions</p>
         </div>
 
         <div className="mb-8">

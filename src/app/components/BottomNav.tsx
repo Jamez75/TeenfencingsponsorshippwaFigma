@@ -44,15 +44,15 @@ export function BottomNav() {
 
   const navItems = [
     { path: '/about', label: 'About', icon: Home, onClick: null },
-    { path: '/donate', label: 'Donate', icon: Heart, onClick: null },
     { path: '/gallery', label: 'Gallery', icon: Image, onClick: null },
     { path: '/events', label: 'Events', icon: Calendar, onClick: null },
+    { path: '/donate', label: 'Donate', icon: Heart, onClick: null },
     { path: '#share', label: 'Share', icon: Share2, onClick: handleShare },
   ];
 
   return (
     <>
-      <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-[var(--bg-subtle)] z-50 pb-safe">
+      <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-[var(--bg-subtle)] z-50 pb-safe md:hidden">
         <div className="grid grid-cols-5 max-w-lg mx-auto">
           {navItems.map((item) => {
             const isActive = location.pathname === item.path;

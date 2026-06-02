@@ -31,7 +31,6 @@ export function DonatePage() {
         <div className="text-center mb-12">
           <div className="h-1 w-16 rounded mx-auto mb-4 bg-[var(--brand-secondary)]" />
           <h1 className="text-4xl mb-2 text-[var(--brand-primary)]">Support My Journey</h1>
-          <div className="h-1 w-16 rounded mx-auto mb-4 bg-[var(--brand-secondary)]" />
           <p className="text-lg text-[var(--text-primary)]">
             Your generous donation helps cover training costs, equipment, and competition travel expenses.
           </p>
