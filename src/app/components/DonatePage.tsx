@@ -150,11 +150,7 @@ export function DonatePage() {
 
           {paymentMethod === 'gcash' && (
             <div className="mb-6 p-4 rounded-lg bg-[var(--bg-light)] border-l-4 border-[var(--brand-primary)]">
-              <p className="text-sm text-[var(--text-primary)]">
-                <strong>GCash Number:</strong> +63 xxx xxx xxxx<br />
-                <strong>Account Name:</strong> Fencing Dreams Fund<br />
-                Please use your email as reference.
-              </p>
+              <p className="text-sm text-[var(--text-primary)]"><strong>GCash Number:</strong> +63 xxx xxx xxxx<br /><strong>Account Name:</strong> Christine Fencing Fund<br />Please use your email as reference.</p>
             </div>
           )}
 
@@ -191,12 +187,7 @@ export function DonatePage() {
 
           {paymentMethod === 'wise' && (
             <div className="mb-6 p-4 rounded-lg bg-[var(--bg-light)] border-l-4 border-[var(--brand-primary)]">
-              <p className="text-sm text-[var(--text-primary)]">
-                <strong>Wise Email:</strong> fencingdreams@email.com<br />
-                <strong>Account Name:</strong> Fencing Dreams Fund<br />
-                <strong>Country:</strong> Philippines<br />
-                Please include your name in the transfer note.
-              </p>
+              <p className="text-sm text-[var(--text-primary)]"><strong>Wise Email:</strong> fencingdreams@email.com<br /><strong>Account Name:</strong> Christine Fencing<br /><strong>Country:</strong> Philippines<br />Please include your name in the transfer note.</p>
             </div>
           )}
 
